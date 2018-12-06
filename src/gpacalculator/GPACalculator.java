@@ -20,8 +20,8 @@ public class GPACalculator {
      */
     public static void main(String[] args) throws FileNotFoundException {
                 
-        String fileName = args[0];
-        //String fileName = "C:\\Users\\abdullah.almosalami\\Documents\\NetBeansProjects\\GPACalculator\\transcript.txt";
+        //String fileName = args[0];
+        String fileName = "/home/abdullah/git/gpaCalculator/transcript.txt";
         File file = new File(fileName);
         Scanner input = new Scanner(file);
         
