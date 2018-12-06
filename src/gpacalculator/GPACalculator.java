@@ -6,7 +6,6 @@
 package gpacalculator;
 
 import java.util.*;
-import java.lang.*;
 import java.io.*;
 
 /**
@@ -17,6 +16,7 @@ public class GPACalculator {
 
     /**
      * @param args the command line arguments
+     * @throws java.io.FileNotFoundException
      */
     public static void main(String[] args) throws FileNotFoundException {
                 
@@ -91,7 +91,7 @@ public class GPACalculator {
             
         }
         
-        System.out.format("Your cumulative GPA with the entries you put in is: %.2f", calculateGPA(totalCredits, creditPoints));
+        System.out.format("Your cumulative GPA with the entries you put in is: %.2f\n", calculateGPA(totalCredits, creditPoints));
     }
     
     private static double calculateGPA(int totalCredits, int creditPoints){
